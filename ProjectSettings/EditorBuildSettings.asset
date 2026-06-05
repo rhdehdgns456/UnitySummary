@@ -6,8 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Ex01_transform/Ex01_Transform.unity
+    guid: f88eeb39414a78e4f812ea65074ed1ec
+  - enabled: 1
+    path: Assets/Ex02_Renderer/ex02_renderer.unity
+    guid: 2014a5819f6fac94c92ae751805131c5
+  - enabled: 1
+    path: Assets/Ex03_Physic/Ex03_physic.unity
+    guid: 39cde4988f5464247ab491652db21bfa
+  - enabled: 1
+    path: Assets/Ex03_Physic/Ex03_physicjoint.unity
+    guid: 9ff25e1403aee7f4caf47e8d73dfd41c
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

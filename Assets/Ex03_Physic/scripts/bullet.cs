@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class bullet : MonoBehaviour
 {
+    public GameObject effect;
     public float lifetime = 10f;
 
     private float deadtime;
@@ -10,12 +11,17 @@ public class bullet : MonoBehaviour
         deadtime = Time.time + lifetime;
     }
 
-    // Update is called once per frame
-    void Update()
+      void Update()
+  {
+     if (deadtime < Time.time)
+       {
+           Destroy(gameObject);
+       }
+   }
+    private void OnCollisionEnter(Collision collision)
     {
-        if (deadtime < Time.time)
-        {
-            Destroy(gameObject);
-        }
+        Instantiate<GameObject>(effect, collision.contacts[0].point, Quaternion.LookRotation(collision.contacts[0].normal));   
+        Destroy (gameObject);
+
     }
 }
